@@ -9,6 +9,7 @@ Este projeto consiste em um pipeline de Engenharia de Dados completo (**E**xtrac
 
 O projeto foi criado como parte do **Desafio de Dados do WoMakersCode**, integrando múltiplas fontes de dados heterogêneas para responder a perguntas de negócio através de uma arquitetura moderna e orquestrada.
 
+![Acesso ao Dashboard](https://public.tableau.com/authoring/MulheresnaTech/Painel1/Analise#1)
 ---
 
 ## 🏗️ Arquitetura do Projeto
