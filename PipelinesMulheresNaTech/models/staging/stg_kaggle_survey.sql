@@ -1,0 +1,16 @@
+
+SELECT PAIS,
+        NIVEL_EDUCACIONAL,
+        ANOS_PROGRAMANDO,
+        CARGO_ATUAL,
+        ANOS_USANDO_ML,
+        CASE WHEN SALARIO_ANUAL_USD LIKE '%-%'
+             THEN CAST(REPLACE(SUBSTR(SALARIO_ANUAL_USD, 1, INSTR(SALARIO_ANUAL_USD, '-') - 1), ',', '') AS REAL)
+             WHEN SALARIO_ANUAL_USD IS NOT NULL
+             THEN CAST(REPLACE(SALARIO_ANUAL_USD, ',', '') AS REAL)
+             ELSE NULL
+        END AS SALARIO_ANUAL_USD,
+        LINGUAGENS_USADAS,
+        BANCOS_DE_DADOS_USADOS,
+        FERRAMENTAS_BI_USADAS
+FROM {{ source('dados_brutos', 'kaggle_survey') }}

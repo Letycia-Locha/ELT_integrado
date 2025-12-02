@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: dados_brutos
+    database: data_warehouse.db
+    schema: main
+
+    tables:
+      - name: kaggle_survey
+        description: "Dados brutos da pesquisa Kaggle, filtrado por mulheres na área de dados"
+      - name: participantes
+        description: "Dados das participantes do bootcamp"
+      - name: paises
+        description: "Dados dos países extraídos da API REST Countries"
+      - name: categorias
+        description: "Mapeamento das habilidades e categorias, extraído de um arquivo JSON"
