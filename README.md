@@ -95,16 +95,15 @@ Após a execução, o ambiente terá a seguinte estrutura:
 ```text
 /content/
 ├── PipelinesMulheresNaTech/       # Projeto dbt
-│   ├── dbt_project.yml
-│   ├── models/
-│   │   ├── staging/               # Limpeza de dados (Views)
-│   │   └── marts/                 # Tabelas Finais
-│   └── ...
-├── data_warehouse.db              # Banco de dados central
-├── bootcampBI.db                  # Fonte simulada
-├── kaggle_survey_2022.csv         # Fonte CSV
-├── habilidades_categorias.json    # Fonte JSON
-└── pipeline.log                   # Logs de execução
+    ├── dbt_project.yml
+    ├── models/
+    │   ├── staging/               # Limpeza de dados (Views)
+    │   └── marts/                 # Tabelas Finais
+    └── data_warehouse.db              # Banco de dados central
+    ├── bootcampBI.db                  # Fonte simulada
+    ├── kaggle_survey_2022.csv         # Fonte CSV
+    ├── habilidades_categorias.json    # Fonte JSON
+    └── pipeline.log                   # Logs de execução
 ```
 
 -----
